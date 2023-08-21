@@ -1,0 +1,20 @@
+/*Css utilizado para a tela de seleção de estado*/
+@import url('config.css');
+
+/*Media queries serão feitas cada uma direto no css destinado daquela página*/
+/*Media Queries*/
+
+/*TELA DE IPHONE 5 E MENORES*/
+@media screen and (max-width: 390px) {}
+
+/*Celulares muito pequenos*/
+@media only screen and (min-width: 390px) and (max-width: 459px) {}
+
+/*Transição entre celulares muito pequenos e pequenos*/
+@media only screen and (min-width: 459px) and (max-width: 599px) {}
+
+/*Celulares pequenos*/
+@media only screen and (min-width: 599px) and (max-width: 767px) {}
+
+/*TABLETS*/
+@media only screen and (min-width: 767px) and (max-width: 992px) {}
