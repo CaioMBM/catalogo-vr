@@ -1,20 +1,372 @@
 /*Css utilizado para a tela de seleção de estado*/
 @import url('config.css');
 
-/*Media queries serão feitas cada uma direto no css destinado daquela página*/
-/*Media Queries*/
 
-/*TELA DE IPHONE 5 E MENORES*/
-@media screen and (max-width: 390px) {}
+body{
+    background-color: var(--laranja);
+}
 
-/*Celulares muito pequenos*/
-@media only screen and (min-width: 390px) and (max-width: 459px) {}
+p{
+    font-weight: 600;
+}
 
-/*Transição entre celulares muito pequenos e pequenos*/
-@media only screen and (min-width: 459px) and (max-width: 599px) {}
+button{
+    box-shadow: 0px 0.7065919983928324px 0.7065919983928324px -0.625px rgba(0, 0, 0, 0.15), 0px 1.8065619053231785px 1.8065619053231785px -1.25px rgba(0, 0, 0, 0.14398), 0px 3.6217592146567767px 3.6217592146567767px -1.875px rgba(0, 0, 0, 0.13793), 0px 6.8655999097303715px 6.8655999097303715px -2.5px rgba(0, 0, 0, 0.12711), 0px 13.646761411524492px 13.646761411524492px -3.125px rgba(0, 0, 0, 0.10451), 0px 30px 30px -3.75px rgba(0, 0, 0, 0.05);
+}
 
-/*Celulares pequenos*/
-@media only screen and (min-width: 599px) and (max-width: 767px) {}
+.centralizar {
+    width: 650px;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 120px;
+    
+}
 
-/*TABLETS*/
+/* UP */
+div.up{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button#btn-voltar{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--branco);
+    background-color: #222222;
+}
+
+button#btn-enviar{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--branco);
+    background-color: var(--verde-queimado);
+}
+
+div.paragrafo{
+    margin-top: 45px;
+}
+
+div.paragrafo p{
+    font-size: var(--inter);
+    font-weight: 600;
+    color: var(--preto-azulado);
+}
+
+
+
+/* MIDDLE */
+div.middle{
+    margin: 70px 0 20px 0;
+}
+
+div.middle h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--branco);
+}
+
+
+
+/* DOWN */
+div.down{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.produto{
+    display: flex;
+}
+
+div.img > img.img-carros{
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+div.info-car {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+div.info-car > p.modelo-car{
+    font-weight: 600;
+    color: var(--preto-azulado);
+}
+
+div.info-car > p.valor-car{
+    font-weight: 500;
+    color: var(--branco);
+}
+
+button.btn-remover{
+    height: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 9px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: var(--branco);
+    background-color: #222222;
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 390px) {
+    .centralizar {
+        width: 290px;
+        padding: 0;
+    }
+    
+    /* UP */
+    div.up{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    button#btn-voltar{
+        width: 110px;
+        height: 40px;
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    button#btn-enviar{
+        width: 110px;
+        height: 40px;
+        padding: 5px;
+    }
+    
+    div.paragrafo{
+        margin-top: 45px;
+    }  
+    
+    
+    /* MIDDLE */
+    div.middle{
+        margin: 70px 0 20px 0;
+    }
+    
+    div.middle h2{
+        font-size: 20px;
+    }
+    
+
+    /* DOWN */
+    div.down{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    div.img > img.img-carros{
+        width: 52px;
+        height: 52px;
+        border-radius: 15px;
+        margin-right: 5px;
+    }
+    
+    button.btn-remover{
+        height: 40px;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 459px) {
+    .centralizar {
+        width: 350px;
+        padding: 0;
+    }
+    
+    /* UP */
+    div.up{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    button#btn-voltar{
+        width: 110px;
+        height: 40px;
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    button#btn-enviar{
+        width: 110px;
+        height: 40px;
+        padding: 5px;
+    }
+    
+    div.paragrafo{
+        margin-top: 45px;
+    }  
+    
+    
+    /* MIDDLE */
+    div.middle{
+        margin: 70px 0 20px 0;
+    }
+    
+    div.middle h2{
+        font-size: 20px;
+    }
+    
+
+    /* DOWN */
+    div.down{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    div.img > img.img-carros{
+        width: 52px;
+        height: 52px;
+        border-radius: 15px;
+        margin-right: 5px;
+    }
+    
+    button.btn-remover{
+        height: 40px;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 459px) and (max-width: 599px) {
+    .centralizar {
+        width: 430px;
+        padding: 0;
+    }
+    
+    /* UP */
+    div.up{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    button#btn-voltar{
+        width: 110px;
+        height: 40px;
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    button#btn-enviar{
+        width: 110px;
+        height: 40px;
+        padding: 5px;
+    }
+    
+    div.paragrafo{
+        margin-top: 45px;
+    }  
+    
+    
+    /* MIDDLE */
+    div.middle{
+        margin: 70px 0 20px 0;
+    }
+    
+    div.middle h2{
+        font-size: 20px;
+    }
+    
+
+    /* DOWN */
+    div.down{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    div.img > img.img-carros{
+        width: 52px;
+        height: 52px;
+        border-radius: 15px;
+        margin-right: 5px;
+    }
+    
+    button.btn-remover{
+        height: 40px;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    .centralizar {
+        width: 530px;
+        padding: 0;
+    }
+    
+    /* UP */
+    div.up{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    button#btn-voltar{
+        width: 110px;
+        height: 40px;
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    button#btn-enviar{
+        width: 110px;
+        height: 40px;
+        padding: 5px;
+    }
+    
+    div.paragrafo{
+        margin-top: 45px;
+    }  
+    
+    
+    /* MIDDLE */
+    div.middle{
+        margin: 70px 0 20px 0;
+    }
+    
+    div.middle h2{
+        font-size: 20px;
+    }
+    
+
+    /* DOWN */
+    div.down{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    div.img > img.img-carros{
+        width: 52px;
+        height: 52px;
+        border-radius: 15px;
+        margin-right: 5px;
+    }
+    
+    button.btn-remover{
+        height: 40px;
+        margin-left: auto;
+    }
+}
+
 @media only screen and (min-width: 767px) and (max-width: 992px) {}
